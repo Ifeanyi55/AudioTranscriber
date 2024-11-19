@@ -1,3 +1,3 @@
 ## **Transcribe & Translate**
 
-![AudioTranscriber](AudiTranscriber.gif)
+![AudioTranscriber](AudioTranscriber.gif)
