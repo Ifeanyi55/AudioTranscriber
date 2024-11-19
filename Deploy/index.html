@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Audio Transcriber & Translator</title>
+     <link rel="shortcut icon" type="image/jpeg" href="image/waves.jpg">
+    <style>
+        body {
+            text-align: center;
+            height: 100vh;
+            width: 100vw;
+            margin: 0;
+            padding: 15px;
+            overflow-x:hidden;
+            }
+            
+    </style>
+</head>
+<body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanta/0.5.24/vanta.clouds.min.js"></script>
+    <script type="module" src="https://gradio.s3-us-west-2.amazonaws.com/5.6.0/gradio.js"></script>
+
+    <gradio-app src="https://ifeanyi-audio-transcriber.hf.space"></gradio-app>
+
+    <script>
+        VANTA.CLOUDS({
+            el: document.body,
+            mouseControls: true,
+            touchControls: true,
+            gyroControls: false,
+            minHeight: 200.00,
+            minWidth: 200.00
+          })
+    </script>
+
+
+</body>
+</html>
