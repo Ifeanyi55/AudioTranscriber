@@ -3,11 +3,11 @@ import google.generativeai as genai
 
 def audioTranscribe(audio_file,translation):
     
-  genai.configure(api_key="AIzaSyAs726sBS7iWEO7ql2LFbvCxJ_bzbpDbiI")
+  genai.configure(api_key="GEMINI_API_KEY")
 
   model = genai.GenerativeModel("gemini-1.5-pro-002")
 
-  aai.settings.api_key = "ea464e0203e74bbb87d4cdc02c56831b"
+  aai.settings.api_key = "AAI_API_KEY"
   transcriber = aai.Transcriber()
   transcript = transcriber.transcribe(audio_file)
 
